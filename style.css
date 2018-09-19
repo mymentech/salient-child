@@ -12,15 +12,16 @@ button.btn.btn-primary.btn-large {
     width: 100%;
     display: inline-block;
     border: navajowhite;
-    background-color: rgba(40,82,130,0.8);
+    background-color: rgba(40, 82, 130, 0.8);
     padding: 10px;
     color: #fff;
     font-size: 18px;
     font-weight: bold;
     border-radius: 2px;
 }
-button.btn.btn-primary.btn-large:hover{
-    background-color: rgba(40,82,130,1);
+
+button.btn.btn-primary.btn-large:hover {
+    background-color: rgba(40, 82, 130, 1);
     cursor: pointer;
 }
 
@@ -29,66 +30,66 @@ div#course_content_body {
     padding-top: 20px;
 }
 
-a.course_content_link.active_course_content{
+a.course_content_link.active_course_content {
     background-color: orange;
     border-radius: 0 50px 0 0;
 }
 
-
-header.diy_menu{
-	padding:20px;
+header.diy_menu {
+    padding: 20px;
 }
 
- ul#menu-course-menu li{
+ul#menu-course-menu li {
     display: inline-block;
     height: 30px; /* this should be the same as your #main-nav height */
-    margin: 0; padding: 0; /* only needed if you don't have a reset */
+    margin: 0;
+    padding: 0; /* only needed if you don't have a reset */
     position: relative; /* this is needed in order to position sub menus */
 }
 
-
- ul#menu-course-menu li a:hover{
-	text-decoration:none;
-	color: #fff;
+ul#menu-course-menu li a:hover {
+    text-decoration: none;
+    color: #fff;
     background: #336799;
-	transition: all 0.5s;
-	
+    transition: all 0.5s;
+
 }
 
- ul#menu-course-menu{
-    margin: 0; padding: 0; /* only needed if you have not done a CSS reset */
+ul#menu-course-menu {
+    margin: 0;
+    padding: 0; /* only needed if you have not done a CSS reset */
 }
 
- ul#menu-course-menu li a {
+ul#menu-course-menu li a {
     display: block;
     padding: 10px 15px;
-	color:#336799;
-	background:#CBCED0;
-	transition: all 0.5s;
+    color: #336799;
+    background: #CBCED0;
+    transition: all 0.5s;
 }
 
-
-
- ul#menu-course-menu .current-menu-item{} 
-header.diy_menu ul ul { 
-    display: none; 
-    position: absolute; 
-}
- ul#menu-course-menu ul li { 
-    float: none; 
-    width: 150px; 
+ul#menu-course-menu .current-menu-item {
 }
 
- ul#menu-course-menu li:hover > ul {
-    display: block; 
+header.diy_menu ul ul {
+    display: none;
+    position: absolute;
 }
 
- ul#menu-course-menu ul li ul {
-	 z-index:99;
+ul#menu-course-menu ul li {
+    float: none;
+    width: 150px;
 }
 
+ul#menu-course-menu li:hover > ul {
+    display: block;
+}
 
-._form_1 ._form{
+ul#menu-course-menu ul li ul {
+    z-index: 99;
+}
+
+._form_1 ._form {
     position: relative;
     text-align: left;
     margin: 25px auto 0;
@@ -98,7 +99,7 @@ header.diy_menu ul ul {
     box-sizing: border-box;
     *zoom: 1;
     background: #f5f5f5 !important;
-    border: 0px solid #b0b0b0 !important;
+    border: 0 solid #b0b0b0 !important;
     width: 517px;
     -moz-border-radius: 3px !important;
     -webkit-border-radius: 3px !important;
@@ -106,49 +107,51 @@ header.diy_menu ul ul {
     color: #030303 !important;
 }
 
-._form-content ._form-title{
+._form-content ._form-title {
     font-size: 22px;
     line-height: 22px;
     font-weight: 600;
     margin-bottom: 0;
 }
 
-._form-content input[type="text"]{
-    border: #979797 1px solid!important;
+._form-content input[type="text"] {
+    border: #979797 1px solid !important;
     border-radius: 4px;
     color: #b1b8bd !important;
-    font-width: bold;
+    font-weight: bold;
     font-size: 13px;
-    padding-left: 5px!important;
-    background-color: #3C3F41!important;
+    padding-left: 5px !important;
+    background-color: #3C3F41 !important;
 }
-._form-content ._field-wrapper{
+
+._form-content ._field-wrapper {
 
 }
 
-._form-content .minimal-form-input label span.text{
+._form-content .minimal-form-input label span.text {
     position: absolute;
-    top: 65%!important;
-    left: 5px!important;
+    top: 65% !important;
+    left: 5px !important;
     font-size: 14px;
     margin-top: 17px;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    color: gray!important;
+    color: gray !important;
 }
 
-._form-content .minimal-form-input label span.text{
-    z-index: 2!important;
-}
-._form-content  button#_form_1_submit {
-    background: #336799!important;
+._form-content .minimal-form-input label span.text {
+    z-index: 2 !important;
 }
 
-.course_content p{
-    font-style: 16px!important;
+._form-content button#_form_1_submit {
+    background: #336799 !important;
 }
 
-#course_content_body{
-    font-style: 16px;
+.course_content p {
+    font-size: 16px;
+}
+
+#course_content_body {
+    font-size: 16px;
 }
 
