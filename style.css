@@ -165,3 +165,6 @@ ul#menu-course-menu ul li ul {
     font-size: 16px;
 }
 
+.sf-menu li{
+    text-transform: uppercase;
+}
