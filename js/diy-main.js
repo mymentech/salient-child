@@ -12,7 +12,6 @@ if (window.innerWidth > 1450) {
     height = "250px";
 }
 
-
 var vvid = "60777705";
 var yvid = "HBJ5A3IYwY8";
 var first = "";
@@ -24,7 +23,6 @@ if(adminUrl.has_intro_video && adminUrl.video_type==='youtube'){
     vvid = adminUrl.video_id;
 }
 
-console.log(adminUrl);
 
 (function($) {
     $(document).ready(function(){
