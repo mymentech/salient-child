@@ -1,3 +1,9 @@
+<?php
+global $chapter_id;
+$title = get_the_title($chapter_id);
+$post = get_post($chapter_id);
+
+?>
 <div class="panel panel-default">
     <div class="panel-heading">
         <h4>
@@ -9,19 +15,15 @@
     <div id="<?php echo esc_html($post->post_name) ?>" class="panel-collapse collapse in">
         <ul class="list-unstyled">
             <?php
-            $course_contents = get_post_meta($id,'chapter-data',true);
-            echo "<pre>";
-            print_r($course_contents);
-            echo "</pre>";
-            die();
+            $course_contents = get_post_meta($chapter_id,'chapter-data',true);
+
             $course_contents = $course_contents['content-group'];
             $course_contents_ids = array();
 
 
             foreach ($course_contents as $content){
                 if($content['chapter-content']){
-                    $content = array_values($content)[1];
-                    $course_contents_ids[] = $content;
+                    $course_contents_ids[] = $content['chapter-content'];
                 }
             }
 

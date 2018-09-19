@@ -37,10 +37,8 @@ $purchased_this_course = apply_filters('current_user_purchased','not_purchased',
 
                         <?php
                         foreach ($chapters as $chapter){
-                            $id = $chapter['course-chapter'];
-                            $title = $chapter['chapter-title'];
-                            $post = get_post($id);
-                            require(locate_template('course-panel.php'));
+                            $chapter_id = $chapter['course-chapter'];
+                            get_template_part('template-parts/course-panel');
                         }
                         ?>
                     </div>
