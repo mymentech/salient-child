@@ -1,0 +1,90 @@
+/*
+Theme Name: Salient Child
+Theme URI: http: //mysite.com/
+Description: This is a custom child theme for Salient
+Author: My Name
+Author URI: http: //mysite.com/
+Template: salient
+Version: 0.1
+Text Domain: salient-child
+*/
+button.btn.btn-primary.btn-large {
+    width: 100%;
+    display: inline-block;
+    border: navajowhite;
+    background-color: rgba(40,82,130,0.8);
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+button.btn.btn-primary.btn-large:hover{
+    background-color: rgba(40,82,130,1);
+    cursor: pointer;
+}
+
+div#course_content_body {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+a.course_content_link.active_course_content{
+    background-color: orange;
+    border-radius: 0 50px 0 0;
+}
+
+
+header.diy_menu{
+	padding:20px;
+}
+
+ ul#menu-course-menu li{
+    display: inline-block;
+    height: 30px; /* this should be the same as your #main-nav height */
+    margin: 0; padding: 0; /* only needed if you don't have a reset */
+    position: relative; /* this is needed in order to position sub menus */
+}
+
+
+ ul#menu-course-menu li a:hover{
+	text-decoration:none;
+	color: #fff;
+    background: #336799;
+	transition: all 0.5s;
+	
+}
+
+ ul#menu-course-menu{
+    margin: 0; padding: 0; /* only needed if you have not done a CSS reset */
+}
+
+ ul#menu-course-menu li a {
+    display: block;
+    padding: 10px 15px;
+	color:#336799;
+	background:#CBCED0;
+	transition: all 0.5s;
+}
+
+
+
+ ul#menu-course-menu .current-menu-item{} 
+header.diy_menu ul ul { 
+    display: none; 
+    position: absolute; 
+}
+ ul#menu-course-menu ul li { 
+    float: none; 
+    width: 150px; 
+}
+
+ ul#menu-course-menu li:hover > ul {
+    display: block; 
+}
+
+ ul#menu-course-menu ul li ul {
+	 z-index:99;
+}
+
+

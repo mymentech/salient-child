@@ -1,0 +1,81 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\2212";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+    }
+   .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\2b";    /* adjust as needed, taken from bootstrap.css */
+    }
+    .sidebar-title {
+    padding: 1rem 2rem;
+    background: #fec108;
+    /* margin-bottom: .5rem; */
+    }
+	
+	
+	.course-sidebar{
+
+}
+
+.course-sidebar ul li a{
+	color: #000;
+	display: block;
+	padding: 5px 15px;
+	text-decoration: none;
+	font-size: 16px;
+}
+.course-sidebar h4 a{
+	text-decoration: none;
+    font-weight: 600;
+    color: #37404d;
+    display: block;
+}
+
+.course-sidebar ul li{
+	    border-bottom: 1px solid #eeeeee;
+        padding: .8rem 2rem;
+}
+.course-sidebar ul li:hover{
+
+    background: #eeeeee;
+}
+
+.course-sidebar ul li:last-child{
+	border-bottom: 0;
+}
+
+.course-sidebar .panel-group .panel+.panel {
+    margin-top: 0px;
+}
+
+.course-sidebar .panel{
+    border: 0;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.course-sidebar .panel-group .panel{
+    border-radius: 0;
+}
+
+.course-sidebar .panel-default>.panel-heading{
+	background: transparent;
+	    padding: 0px 15px;
+}
+.badge-warning {
+    background-color: #ffbe00;
+}
+
+.main-content{
+    padding: 2rem;
+}
+.main-content h2.course-video{
+    
+}
