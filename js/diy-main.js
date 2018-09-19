@@ -12,10 +12,19 @@ if (window.innerWidth > 1450) {
     height = "250px";
 }
 
-var vvid = "191887252";
+
+var vvid = "60777705";
 var yvid = "HBJ5A3IYwY8";
 var first = "";
 var autoplay = "";
+
+if(adminUrl.has_intro_video && adminUrl.video_type==='youtube'){
+    yvid = adminUrl.video_id;
+}else if(adminUrl.has_intro_video && adminUrl.video_type==='vimeo'){
+    vvid = adminUrl.video_id;
+}
+
+console.log(adminUrl);
 
 (function($) {
     $(document).ready(function(){
@@ -28,6 +37,12 @@ var autoplay = "";
             loop: false
         };
         var vp = new Vimeo.Player("vplayer", options);
+        if(adminUrl.has_intro_video && adminUrl.video_type==='youtube'){
+            $("#yplayer").show();
+        }else if(adminUrl.has_intro_video && adminUrl.video_type==='vimeo'){
+            $("#vplayer").show();
+        }
+
 
 
         $('.course_content_link').on('click', function(e){
@@ -85,9 +100,9 @@ var autoplay = "";
                 "action": "mt_course_nonce",
                 "mt_nonce":mt_course_nonce,
                 "post_id":post_id,
-                },function( course_content ){
-                    $('#course_content_body').html(course_content);
-                });
+            },function( course_content ){
+                $('#course_content_body').html(course_content);
+            });
         });
 
         var panel = $('#accordion .panel').first();
