@@ -168,3 +168,10 @@ ul#menu-course-menu ul li ul {
 .sf-menu li{
     text-transform: uppercase;
 }
+
+a.course_content_link i.fa.fa-plus {
+    color: #ffbe00;
+    font-weight: 200;
+    font-size: 15px;
+    margin-right: 10px;
+}
