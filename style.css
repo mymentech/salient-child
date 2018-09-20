@@ -63,8 +63,8 @@ ul#menu-course-menu {
 ul#menu-course-menu li a {
     display: block;
     padding: 10px 15px;
-    color: #336799;
-    background: #CBCED0;
+    color: #888;
+    background: #ffffff;
     transition: all 0.5s;
 }
 
@@ -178,4 +178,9 @@ a.course_content_link i.fa.fa-plus {
 
 a.course_content_link span.badge.badge-warning.badge-pill.pull-right {
     display: none;
+}
+ul#menu-course-menu li:hover ul#menu-course-menu li:after {
+    content: "";
+    border-bottom: 2px solid #3452ff;
+    display: block;
 }
