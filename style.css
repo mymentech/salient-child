@@ -41,10 +41,10 @@ header.diy_menu {
 
 ul#menu-course-menu li {
     display: inline-block;
-    height: 30px; /* this should be the same as your #main-nav height */
+    height: 30px;
     margin: 0;
-    padding: 0; /* only needed if you don't have a reset */
-    position: relative; /* this is needed in order to position sub menus */
+    position: relative;
+    padding: 10px 15px;
 }
 
 ul#menu-course-menu li a:hover {
@@ -62,7 +62,6 @@ ul#menu-course-menu {
 
 ul#menu-course-menu li a {
     display: block;
-    padding: 10px 15px;
     color: #888;
     background: #ffffff;
     transition: all 0.5s;
