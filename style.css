@@ -175,3 +175,7 @@ a.course_content_link i.fa.fa-plus {
     font-size: 15px;
     margin-right: 10px;
 }
+
+a.course_content_link span.badge.badge-warning.badge-pill.pull-right {
+    display: none;
+}
